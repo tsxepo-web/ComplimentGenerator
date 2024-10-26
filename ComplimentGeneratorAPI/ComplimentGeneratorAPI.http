@@ -1,0 +1,6 @@
+@ComplimentGeneratorAPI_HostAddress = http://localhost:5160
+
+GET {{ComplimentGeneratorAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

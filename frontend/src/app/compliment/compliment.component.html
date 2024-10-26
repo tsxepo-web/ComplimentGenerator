@@ -1,0 +1,18 @@
+<div>
+  <h1>Compliment Generator</h1>
+  <div>
+    <ul>
+      <li *ngFor="let compliment of compliments">
+        {{ compliment.id.creationTime }}
+        {{ compliment.content }}
+        <button (click)="deleteCompliment(compliment.id)">Delete</button>
+      </li>
+    </ul>
+    <input #newCompliment placeholder="Add a new compliment" />
+    <button
+      (click)="addCompliment(newCompliment.value); newCompliment.value = ''"
+    >
+      Add Compliment
+    </button>
+  </div>
+</div>
